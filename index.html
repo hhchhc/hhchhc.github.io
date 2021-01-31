@@ -20,20 +20,68 @@
     <a href="http://www.baidu.com"><ins>baidu</ins></a>
     <h4>内部链接：</h4>
     <a href="./note/html5.html"> <ins>HTML5</ins> </a>
+    <h1>AAA</h1>
+    <form action="xxx.php" method="GET" name="name1">
+        <label for="111"> 文本：</label>
+        <input type="text" name="username" id="111" value="请输入用户名" maxlength="12">(最大十二个字符)
+        <br> 密码：
+        <input type="password" name="pwd">
+        <br> 性别：
+        <label for="sex_man">男</label>
+        <input type="radio" name="sex" id="sex_man" checked>
+        <label for="sex_woman">女</label>
+        <input type="radio" name="sex" id="sex_woman">
+        <br> 爱好 1
+        <input type="checkbox" name="hobby"> 2 <input type="checkbox" name="hobby"> 3 <input type="checkbox" name="hobby"><br>
+        <select name="" id="">
+            <option value="">选项1</option>
+            <option value="" selected>选项2</option>
+            <option value="">选项3</option>
+        </select>
+        <br> 上传图像
+        <input type="file">
+        <br>
+        <textarea name="" id="" cols="30" rows="10">默认文字</textarea>
+        <input type="submit" value="提交"><input type="reset">
+    </form>
 </body>
 
 <body>
-    <table>
-        <tr>
-            <td>姓名</td>
-            <td>性别</td>
-            <td>年龄</td>
-        </tr>
-        <tr>
-            <td>liudehua</td>
-        </tr>
+    <table align="center" border="1">
+        <thead>
+            <tr>
+                <th>th1,1</th>
+                <th>th1,2</th>
+                <th>th1,3</th>
+                <th>th1,4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>td2,1</td>
+                <td colspan="2">td2,2/3</td>
+                <!--可横跨的列数-->
+                <td>td2,4</td>
+            </tr>
+            <tr>
+                <td>td3,1</td>
+                <td rowspan="2">td3/4,2</td>
+                <!--可纵跨的行数-->
+                <td>td3,3</td>
+                <td>td3,4</td>
+            </tr>
+            <tr>
+                <td>td4,1</td>
+                <td>td4,3</td>
+                <td>td4,4</td>
+            </tr>
+        </tbody>
     </table>
 </body>
+
+
+
+
 
 <body>
     <a href="http://www.baidu.com"><ins><img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"></ins></a>
